@@ -1,17 +1,17 @@
-# UC1 Implementation Summary
+# UC5 Implementation Summary
 
 ## Files changed
-- src/Contact.java: added a Contact model with all requested fields, constructors, getters/setters, toString, equals, and hashCode.
-- src/AddressBookMain.java: added the main entry point that prints the welcome message and displays a sample contact.
-- TASKS.md: recorded the task checklist for the UC1 session.
+- src/AddressBook.java: replaced the single-contact approach with a list-backed address book and added add, edit, delete, display, and search operations.
+- src/AddressBookMain.java: kept the main entry point aligned with the new full-menu loop.
+- TASKS.md: recorded the UC5 task checklist.
 
 ## What was added
-- Implemented the UC1 foundation for the Address Book project.
-- Added the Contact model and the initial console output required by the branch specification.
+- Implemented the UC5 full menu loop for the address book.
+- Added display and search functionality for managing multiple contacts.
 
 ## Verification
 - Compiled successfully with javac.
-- Ran the program successfully and observed the expected welcome output and contact details.
+- Ran the program with sample input covering add, display, search, and invalid-menu scenarios.
 
 ## Assumption
-- A simple sample contact was used in the main class to demonstrate the model and output format for UC1.
+- Contacts are stored in an ArrayList and searched by first name.

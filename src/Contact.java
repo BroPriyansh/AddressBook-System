@@ -100,29 +100,4 @@ public class Contact {
                 ", email='" + email + '\'' +
                 '}';
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        Contact contact = (Contact) obj;
-        return java.util.Objects.equals(firstName, contact.firstName)
-                && java.util.Objects.equals(lastName, contact.lastName)
-                && java.util.Objects.equals(address, contact.address)
-                && java.util.Objects.equals(city, contact.city)
-                && java.util.Objects.equals(state, contact.state)
-                && java.util.Objects.equals(zip, contact.zip)
-                && java.util.Objects.equals(phoneNumber, contact.phoneNumber)
-                && java.util.Objects.equals(email, contact.email);
-    }
-
-    @Override
-    public int hashCode() {
-        return java.util.Objects.hash(firstName, lastName, address, city, state, zip,
-                phoneNumber, email);
-    }
 }
